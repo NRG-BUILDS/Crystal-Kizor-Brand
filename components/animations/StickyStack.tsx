@@ -56,9 +56,7 @@ export function StickyStack({ cards }: StickyStackProps) {
           key={i}
           className="stack-card sticky top-0 min-h-[85vh] lg:min-h-[92vh] flex items-center justify-center py-6"
         >
-          <div className="w-full max-w-[1340px] px-6 lg:px-12">
-            {card}
-          </div>
+          <div className="w-full max-w-335 px-6 lg:px-12">{card}</div>
         </div>
       ))}
     </div>

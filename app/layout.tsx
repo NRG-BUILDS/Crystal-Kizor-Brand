@@ -30,12 +30,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Crystal Kizor" }],
   creator: "Crystal Kizor",
-  metadataBase: new URL("https://crystalkizor.com"),
+  metadataBase: new URL("https://crystalkizor.vercel.app"),
   openGraph: {
     title: "Crystal Kizor | Architect, Designer, and Founder",
     description:
       "Crystal Kizor designs buildings, crafts furniture, and invests in the next generation across Africa.",
-    url: "https://crystalkizor.com",
+    url: "https://crystalkizor.vercel.app",
     siteName: "Crystal Kizor Portfolio Hub",
     locale: "en_US",
     type: "website",
@@ -54,9 +54,7 @@ export const metadata: Metadata = {
     description:
       "Crystal Kizor designs buildings, crafts furniture, and invests in the next generation across Africa.",
     creator: "@crystalkizor",
-    images: [
-      "/assets/crystal/Architectural Studio Portrait.png",
-    ],
+    images: ["/assets/crystal/Architectural Studio Portrait.png"],
   },
   robots: {
     index: true,
@@ -75,47 +73,52 @@ export default function RootLayout({
       {
         "@type": "Person",
         "@id": "https://crystalkizor.com/#person",
-        "name": "Crystal Kizor",
-        "jobTitle": "Architect, Spatial Designer, Founder, and Researcher",
-        "description":
+        name: "Crystal Kizor",
+        jobTitle: "Architect, Spatial Designer, Founder, and Researcher",
+        description:
           "Architect, designer, entrepreneur, speaker, and researcher leading Studio COKA, ELEvated, The Effective Architect, AKO Alliance, and Alive and Free.",
-        "url": "https://crystalkizor.com",
-        "knowsAbout": [
+        url: "https://crystalkizor.com",
+        knowsAbout: [
           "Architecture and Construction",
           "Climate-responsive Built Environment",
           "African Furniture and Material Culture",
           "Architectural Education and Media",
-          "Youth Mentorship and Community Leadership"
+          "Youth Mentorship and Community Leadership",
         ],
-        "worksFor": [
+        worksFor: [
           {
             "@type": "Organization",
-            "name": "Studio COKA",
-            "description": "Architecture, interior design, and construction practice focused on thoughtful and climate-responsive environments."
+            name: "Studio COKA",
+            description:
+              "Architecture, interior design, and construction practice focused on thoughtful and climate-responsive environments.",
           },
           {
             "@type": "Organization",
-            "name": "ELEvated",
-            "description": "Contemporary furniture and product design rooted in African context, materials, and ideas."
+            name: "ELEvated",
+            description:
+              "Contemporary furniture and product design rooted in African context, materials, and ideas.",
           },
           {
             "@type": "Organization",
-            "name": "The Effective Architect",
-            "description": "Architecture education and media platform helping built-environment professionals learn and grow."
+            name: "The Effective Architect",
+            description:
+              "Architecture education and media platform helping built-environment professionals learn and grow.",
           },
           {
             "@type": "Organization",
-            "name": "AKO Alliance",
-            "description": "Expanding access to education and opportunity for children and young people."
+            name: "AKO Alliance",
+            description:
+              "Expanding access to education and opportunity for children and young people.",
           },
           {
             "@type": "Organization",
-            "name": "Alive and Free",
-            "description": "Christian youth movement focused on truth, healing, freedom, identity, purpose, and life in Christ."
-          }
-        ]
-      }
-    ]
+            name: "Alive and Free",
+            description:
+              "Christian youth movement focused on truth, healing, freedom, identity, purpose, and life in Christ.",
+          },
+        ],
+      },
+    ],
   };
 
   return (
