@@ -7,46 +7,46 @@ import { ScrollReveal } from "@/components/animations/ScrollReveal";
 export function Pathways() {
   const visitorPaths = [
     {
-      audience: "Prospective Client",
-      objective: "Commission architecture, interior design, or climate-responsive construction",
+      audience: "Clients & Homeowners",
+      objective: "Commission a home, commercial space, or interior with our architecture and construction studio.",
       destinationTitle: "Studio COKA",
       href: "#coka",
       badge: "Architecture & Construction",
     },
     {
-      audience: "Architect or Professional",
-      objective: "Accelerate your built-environment career, learn practice economics, and access media",
+      audience: "Architects & Builders",
+      objective: "Learn the business of design, manage projects better, and grow your built-environment career.",
       destinationTitle: "The Effective Architect",
       href: "#tea",
       badge: "Education & Media",
     },
     {
-      audience: "Curator or Collector",
-      objective: "Acquire contemporary furniture and design pieces rooted in African material culture",
+      audience: "Collectors & Buyers",
+      objective: "Order contemporary furniture and collectible pieces crafted with African materials and ideas.",
       destinationTitle: "ELEvated",
       href: "#elevated",
-      badge: "Object & Furniture Design",
+      badge: "Furniture & Products",
     },
     {
-      audience: "Partner or Donor",
-      objective: "Expand educational access and long-term vocational opportunities for young people",
+      audience: "Partners & Donors",
+      objective: "Help expand education access, reading centers, and practical training for young people.",
       destinationTitle: "AKO Alliance",
       href: "#civic",
-      badge: "Youth Education Access",
+      badge: "Youth Education",
     },
     {
-      audience: "Young Person or Church Leader",
-      objective: "Engage with truth, healing, spiritual formation, freedom, and identity in Christ",
+      audience: "Youth & Church Leaders",
+      objective: "Find community, spiritual growth, emotional healing, and purpose through a Christian youth movement.",
       destinationTitle: "Alive and Free",
       href: "#civic",
-      badge: "Spiritual Community",
+      badge: "Faith Community",
     },
     {
-      audience: "Event Organiser or Press",
-      objective: "Book keynote talks, panel contributions, and research discussions on African cities",
+      audience: "Event Organisers & Press",
+      objective: "Invite Crystal to speak at conferences, moderate discussions, or give lectures on design and cities.",
       destinationTitle: "Speaking Engagements",
       href: "#speaking",
-      badge: "Keynotes & Research",
+      badge: "Keynotes & Panels",
     },
   ];
 
@@ -59,7 +59,7 @@ export function Pathways() {
             Where should you begin?
           </h2>
           <p className="text-base text-[#56595D] leading-relaxed">
-            Crystal Kizor creates across distinct practices. Select your direct entry point to explore commissions, learning platforms, contemporary objects, and civic movements.
+            Crystal works across architecture, furniture design, professional education, and community movements. Choose your path below to find the right place.
           </p>
         </ScrollReveal>
 
@@ -97,7 +97,7 @@ export function Pathways() {
                 </div>
 
                 <div className="mt-8 pt-4 border-t border-[#E3E3DF] flex items-center justify-between text-xs font-medium text-[#121314] group-hover:text-[#C64E2E] transition-colors">
-                  <span>View practice details</span>
+                  <span>View details</span>
                   <span>→</span>
                 </div>
               </Link>

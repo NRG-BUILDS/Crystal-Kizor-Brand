@@ -8,20 +8,20 @@ import { ScrollReveal } from "@/components/animations/ScrollReveal";
 export function SpeakingResearch() {
   const speakingThemes = [
     {
-      title: "Climate-Responsive African Cities",
-      summary: "Adapting vernacular bioclimatic intelligence to address rapid urban density, thermal loads, and ecological changes in tropical regions.",
+      title: "Buildings for African Climates",
+      summary: "How traditional building wisdom helps modern African cities stay cool, durable, and comfortable without heavy energy costs.",
     },
     {
-      title: "Built-Environment Entrepreneurship",
-      summary: "Navigating project finance, commercial resilience, and operational integrity for independent spatial studios across developing markets.",
+      title: "Running a Creative Practice",
+      summary: "How to build an independent architecture studio with healthy finances, clear client contracts, and strong principles.",
     },
     {
-      title: "Spatial Equity and Civic Memory",
-      summary: "Designing public spaces and educational environments that reinforce cultural identity, youth dignity, and communal belonging.",
+      title: "Public Spaces for Communities",
+      summary: "Why thoughtful public spaces and schools give young people a genuine sense of dignity, safety, and belonging.",
     },
     {
-      title: "Material Sovereignty and Local Craft",
-      summary: "Reclaiming indigenous earth, stone, and timber supply chains to construct enduring, low-carbon architectural structures.",
+      title: "Working with Local Materials",
+      summary: "Why building with regional earth, stone, and timber creates better architecture and supports local craftsmen.",
     },
   ];
 
@@ -31,13 +31,13 @@ export function SpeakingResearch() {
         {/* Eyebrow 3 of max 3 allowed on entire page */}
         <ScrollReveal className="max-w-2xl mb-12">
           <p className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#C64E2E] mb-3">
-            Keynotes & Research
+            Keynotes and Talks
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-[#121314] mb-4">
-            Speaking & Critical Inquiry
+            Speaking and Ideas
           </h2>
           <p className="text-base sm:text-lg text-[#56595D] leading-relaxed">
-            Crystal Kizor delivers keynote addresses, academic lectures, and moderated panels analyzing contemporary African spatial practice, material innovation, and entrepreneurial resilience.
+            Crystal delivers keynote talks, joins panel discussions, and teaches on climate-responsive architecture, African cities, and running independent creative businesses.
           </p>
         </ScrollReveal>
 
@@ -50,7 +50,7 @@ export function SpeakingResearch() {
                 <div className="p-6 bg-white border border-[#E3E3DF] hover:border-[#121314] transition-colors h-full flex flex-col justify-between">
                   <div>
                     <div className="text-[11px] font-mono text-[#56595D] mb-3">
-                      Lecture Subject 0{idx + 1}
+                      Topic 0{idx + 1}
                     </div>
                     <h3 className="text-lg font-medium text-[#121314] mb-3">
                       {item.title}
@@ -70,15 +70,15 @@ export function SpeakingResearch() {
               <div className="relative aspect-[4/5] w-full bg-[#E8E8E4] border border-[#E3E3DF] overflow-hidden">
                 <Image
                   src="/assets/crystal/Poised in a Warm Design Studio.png"
-                  alt="Crystal Kizor during an architectural research and symposium dialogue"
+                  alt="Crystal Kizor speaking in her design studio"
                   fill
                   sizes="(max-width: 1024px) 100vw, 42vw"
                   className="object-cover"
                 />
               </div>
               <div className="mt-3 flex items-center justify-between text-xs font-mono text-[#56595D]">
-                <span>Curatorial Dialogue & Public Lectures</span>
-                <span>Symposium Archive</span>
+                <span>Keynotes, Panels and Guest Lectures</span>
+                <span>Lagos and International</span>
               </div>
             </ScrollReveal>
           </div>
@@ -89,7 +89,7 @@ export function SpeakingResearch() {
           <div className="p-8 sm:p-10 bg-[#FFFFFF] border-l-4 border-l-[#C64E2E] border border-[#E3E3DF] flex flex-col md:flex-row md:items-center justify-between gap-8">
             <div className="max-w-2xl">
               <blockquote className="text-lg sm:text-xl font-light text-[#121314] leading-relaxed italic mb-3">
-                &ldquo;Architecture is not merely the arrangement of shelter. It is the physical manifestation of our values, our memory, and our responsibility to the next generation.&rdquo;
+                &ldquo;Architecture is not just about shelter. It shows what we value, what we remember, and what we owe to the next generation.&rdquo;
               </blockquote>
               <p className="text-xs font-mono uppercase tracking-wider text-[#56595D]">
                 Crystal Kizor, African Urbanism Forum Keynote
@@ -101,7 +101,7 @@ export function SpeakingResearch() {
                 href="#enquiry"
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 text-xs uppercase tracking-wider font-medium text-white bg-[#121314] hover:bg-[#C64E2E] active:scale-[0.98] transition-all focus-visible:outline-none"
               >
-                <span>Book speaking</span>
+                <span>Invite Crystal to speak</span>
                 <ArrowUpRight size={15} weight="bold" />
               </Link>
             </div>

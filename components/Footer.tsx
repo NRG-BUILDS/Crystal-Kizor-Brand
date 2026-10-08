@@ -7,9 +7,9 @@ export function Footer() {
     { name: "Studio COKA", href: "#coka", tag: "Architecture & Construction" },
     { name: "ELEvated", href: "#elevated", tag: "Contemporary Furniture" },
     { name: "The Effective Architect", href: "#tea", tag: "Education & Media" },
-    { name: "AKO Alliance", href: "#civic", tag: "Education Access" },
-    { name: "Alive and Free", href: "#civic", tag: "Spiritual Community" },
-    { name: "Speaking Engagements", href: "#speaking", tag: "Keynotes & Panels" },
+    { name: "AKO Alliance", href: "#civic", tag: "Youth Education" },
+    { name: "Alive and Free", href: "#civic", tag: "Christian Youth Movement" },
+    { name: "Speaking Engagements", href: "#speaking", tag: "Keynotes & Talks" },
     { name: "Crystal Kizor", href: "#", tag: "Personal Monograph" },
   ];
 
@@ -30,18 +30,18 @@ export function Footer() {
                 />
               </div>
               <p className="text-sm text-[#56595D] leading-relaxed max-w-sm mb-6">
-                Spatial practice, material culture, and civic transformation. Uniting architecture, education, industrial design, and faith across Africa.
+                Crystal Kizor designs buildings, crafts furniture, and invests in people through education, community work, and faith across Africa.
               </p>
             </div>
             <div className="text-xs font-mono text-[#56595D]">
-              Based in Lagos, Nigeria. Global commissions.
+              Based in Lagos, Nigeria. Working globally.
             </div>
           </div>
 
           {/* Practice directory */}
           <div className="md:col-span-4">
             <h3 className="text-xs font-mono uppercase tracking-widest text-[#56595D] mb-4">
-              Practice Directory
+              All Initiatives
             </h3>
             <ul className="space-y-2.5">
               {initiatives.map((item) => (
@@ -78,18 +78,23 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="#elevated" className="hover:text-[#121314] transition-colors">
+                    ELEvated Furniture
+                  </Link>
+                </li>
+                <li>
                   <Link href="#tea" className="hover:text-[#121314] transition-colors">
                     The Effective Architect
                   </Link>
                 </li>
                 <li>
                   <Link href="#civic" className="hover:text-[#121314] transition-colors">
-                    Civic & Spiritual Initiatives
+                    Community & Faith
                   </Link>
                 </li>
                 <li>
                   <Link href="#enquiry" className="hover:text-[#121314] transition-colors">
-                    Enquiry Console
+                    Start an Enquiry
                   </Link>
                 </li>
               </ul>
@@ -100,7 +105,7 @@ export function Footer() {
                 href="#"
                 className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#121314] hover:text-[#C64E2E] transition-colors"
               >
-                <span>Return to Top</span>
+                <span>Back to top</span>
                 <ArrowUp size={14} weight="bold" />
               </a>
             </div>
@@ -111,7 +116,7 @@ export function Footer() {
         <div className="pt-10 pb-8 flex flex-col sm:flex-row items-center justify-between gap-6 border-b border-[#E3E3DF]">
           <div className="flex items-center gap-3">
             <span className="text-xs font-mono uppercase tracking-widest text-[#56595D]">
-              Personal Monograph & Signature
+              Personal Monograph and Seal
             </span>
           </div>
           <div className="relative h-12 w-48 sm:w-56">
@@ -131,7 +136,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Crystal Kizor. All rights reserved.
           </div>
           <div>
-            Built with Next.js and architectural restraint.
+            Lagos, Nigeria
           </div>
         </div>
       </div>

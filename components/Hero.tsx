@@ -21,20 +21,20 @@ export function Hero() {
           >
             {/* 1. Eyebrow */}
             <p className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#C64E2E] mb-5">
-              Architect, Founder, and Researcher
+              Architect and Founder
             </p>
 
-            {/* 2. Headline (Max 2 lines desktop) */}
+            {/* 2. Headline (Clear, human, answers who and what) */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-[#121314] leading-[1.08] mb-6">
-              Spatial practice, material culture, and civic transformation.
+              Crystal Kizor designs buildings, crafts furniture, and invests in the next generation.
             </h1>
 
-            {/* 3. Subtext (19 words, under 20-word cap) */}
+            {/* 3. Subtext (16 words, under 20-word cap, answers what she is building) */}
             <p className="text-base sm:text-lg text-[#56595D] leading-relaxed max-w-[54ch] mb-8">
-              Architect Crystal Kizor leads multidisciplinary practices across climate-responsive architecture, contemporary industrial craft, and transformative community institutions.
+              Architect and founder leading Studio COKA, ELEvated furniture, professional education platforms, and youth mentorship initiatives.
             </p>
 
-            {/* 4. CTAs (1 primary CTA, 1 quiet secondary link, no sub-tagline) */}
+            {/* 4. CTAs (Answers where to go next) */}
             <div className="flex flex-wrap items-center gap-5">
               <Link
                 href="#enquiry"
@@ -64,7 +64,7 @@ export function Hero() {
             <div className="relative aspect-[4/5] w-full bg-[#E8E8E4] overflow-hidden border border-[#E3E3DF]">
               <Image
                 src="/assets/crystal/Architectural Studio Portrait.png"
-                alt="Architect Crystal Kizor in her architectural studio workspace"
+                alt="Crystal Kizor in her architectural studio"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 42vw"
@@ -73,8 +73,8 @@ export function Hero() {
             </div>
             {/* Minimal metadata tag */}
             <div className="mt-3 flex items-center justify-between text-[11px] font-mono text-[#56595D]">
-              <span>Studio Practice Portrait</span>
-              <span>Lagos / West Africa</span>
+              <span>Crystal Kizor</span>
+              <span>Lagos, Nigeria</span>
             </div>
           </motion.div>
         </div>

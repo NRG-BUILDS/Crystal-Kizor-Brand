@@ -9,47 +9,47 @@ import { ScrollReveal } from "@/components/animations/ScrollReveal";
 export function Elevated() {
   const furnitureGallery = [
     {
-      title: "Series 01: Low Occasional Lounge Chair",
-      material: "Solid Sapele Hardwood & Hand-Woven Raphia",
+      title: "Series 01: Low Lounge Chair",
+      material: "Solid sapele wood frame with hand-woven reed seating",
       image: "/assets/showcase/funiture/furniture 1.jpeg",
       dimensions: "82cm W x 74cm D x 68cm H",
-      year: "2025 Commission",
+      year: "Custom commission",
     },
     {
-      title: "Series 02: Sculptural Monolithic Seat",
-      material: "Ebonized Iroko Timber with Sand-Cast Brass Feet",
+      title: "Series 02: Sculptural Low Chair",
+      material: "Dark iroko timber with hand-cast solid brass feet",
       image: "/assets/showcase/funiture/furniture 2.jpeg",
       dimensions: "64cm W x 60cm D x 72cm H",
-      year: "2025 Edition",
+      year: "Studio edition",
     },
     {
-      title: "Series 03: Woven Cane Low Bench",
-      material: "Steamed West African Ash with Organic Plant Reed",
+      title: "Series 03: Woven Low Bench",
+      material: "Regional hardwood frame with hand-woven natural cane",
       image: "/assets/showcase/funiture/furniture 3.jpeg",
       dimensions: "120cm W x 45cm D x 42cm H",
-      year: "Studio Edition",
+      year: "Studio edition",
     },
     {
-      title: "Series 04: Carved Organic Coffee Table",
-      material: "Naturally Cured Mahogany with Polished Oil Lustre",
+      title: "Series 04: Carved Coffee Table",
+      material: "Solid mahogany carved by local craftsmen with a natural oil finish",
       image: "/assets/showcase/funiture/furniture 4.jpeg",
       dimensions: "110cm W x 70cm D x 38cm H",
-      year: "Bespoke Order",
+      year: "Bespoke order",
     },
   ];
 
   const materials = [
     {
       title: "Hardwood Joinery",
-      detail: "Ethically harvested West African sapele, iroko, and teak shaped with exposed, structural joinery.",
+      detail: "Ethically harvested African sapele, iroko, and teak crafted with visible, sturdy joinery.",
     },
     {
       title: "Hand-Cast Brass",
-      detail: "Custom hardware, connectors, and sculptural feet poured in regional sand-casting workshops.",
+      detail: "Custom brass feet, brackets, and handles cast by regional metal artisans.",
     },
     {
-      title: "Indigenous Weaves",
-      detail: "Tactile cane, rush, and woven plant fibres integrated into modern seating ergonomics.",
+      title: "Natural Weaving",
+      detail: "Hand-woven cane, rush, and plant fibers shaped into comfortable contemporary seating.",
     },
   ];
 
@@ -62,17 +62,17 @@ export function Elevated() {
             ELEvated
           </h2>
           <p className="text-base sm:text-lg text-[#56595D] leading-relaxed">
-            Contemporary furniture and product design rooted in African context, materials, and ideas. ELEvated translates indigenous material traditions into collectible, enduring domestic objects.
+            Contemporary furniture and objects made in Africa. ELEvated uses local timber, brass, and weaving traditions to create everyday pieces that last.
           </p>
         </ScrollReveal>
 
         {/* Horizontal Pan Indicator */}
         <div className="flex items-center justify-between pb-4 border-b border-[#E3E3DF]">
           <span className="text-xs font-mono uppercase tracking-widest text-[#56595D]">
-            Object Collection (Horizontal scroll)
+            Furniture Collection
           </span>
           <span className="text-xs font-mono text-[#C64E2E]">
-            04 Editions
+            04 Pieces
           </span>
         </div>
       </div>
@@ -120,7 +120,7 @@ export function Elevated() {
                   href="#enquiry"
                   className="text-[#121314] hover:text-[#C64E2E] font-medium uppercase tracking-wider"
                 >
-                  Acquire →
+                  Order piece →
                 </Link>
               </div>
             </div>
@@ -136,7 +136,7 @@ export function Elevated() {
               <div className="p-6 bg-white border border-[#E3E3DF] hover:border-[#121314] transition-colors h-full flex flex-col justify-between">
                 <div>
                   <span className="text-[11px] font-mono uppercase tracking-widest text-[#C64E2E] block mb-2">
-                    Material Study 0{idx + 1}
+                    Materials 0{idx + 1}
                   </span>
                   <h3 className="text-lg font-medium text-[#121314] mb-2">
                     {item.title}

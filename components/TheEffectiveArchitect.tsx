@@ -8,16 +8,16 @@ import { ScrollReveal } from "@/components/animations/ScrollReveal";
 export function TheEffectiveArchitect() {
   const pillars = [
     {
-      label: "Curriculum & Frameworks",
-      desc: "Structured practice management training addressing project billing, construction administration, and client engagement for independent architects.",
+      label: "Business and Practice",
+      desc: "Practical training on pricing your work, managing construction contracts, and communicating clearly with clients.",
     },
     {
-      label: "Media & Conversations",
-      desc: "Editorial podcasts, long-form technical articles, and roundtables dissecting contemporary urban building challenges in African cities.",
+      label: "Media and Conversations",
+      desc: "Podcasts, interviews, and candid discussions exploring what it really takes to build in African cities today.",
     },
     {
-      label: "Professional Mentorship",
-      desc: "Direct guidance networks helping young spatial practitioners navigate licensure, studio foundation, and career longevity.",
+      label: "Career Mentorship",
+      desc: "Direct community and guidance for young architects starting their own studios or moving into senior leadership.",
     },
   ];
 
@@ -27,13 +27,13 @@ export function TheEffectiveArchitect() {
         {/* Eyebrow 2 of max 3 allowed on entire page */}
         <ScrollReveal className="max-w-2xl mb-12">
           <p className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#C64E2E] mb-3">
-            Architecture Education & Media
+            Architecture Education and Media
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-[#121314] mb-4">
             The Effective Architect
           </h2>
           <p className="text-base sm:text-lg text-[#56595D] leading-relaxed">
-            An education and media platform equipping built-environment professionals to learn, grow, and build sustainable practices across the African continent and beyond.
+            An education and media platform helping architects and built-environment professionals learn the business of design, grow their careers, and build better practices.
           </p>
         </ScrollReveal>
 
@@ -52,8 +52,8 @@ export function TheEffectiveArchitect() {
                 />
               </div>
               <div className="mt-3 flex items-center justify-between text-xs font-mono text-[#56595D]">
-                <span>Platform: Education, Media & Broadcast</span>
-                <span>Regional Cohorts</span>
+                <span>Platform: Education, Media and Masterclasses</span>
+                <span>Active Community</span>
               </div>
             </ScrollReveal>
           </div>

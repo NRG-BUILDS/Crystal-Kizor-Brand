@@ -16,49 +16,49 @@ const ROUTING_OPTIONS: RoutingTarget[] = [
   {
     id: "coka",
     label: "Studio COKA (Architecture, Interiors & Construction)",
-    department: "Studio COKA Architectural Practice",
+    department: "Studio COKA Architecture Studio",
     email: "commissions@studiocoka.com",
-    leadTime: "2 to 3 business days for project evaluation",
+    leadTime: "2 to 3 business days for project review",
   },
   {
     id: "elevated",
     label: "ELEvated (Furniture & Product Design)",
-    department: "ELEvated Studio & Workshop",
+    department: "ELEvated Furniture Workshop",
     email: "design@elevatedcraft.com",
-    leadTime: "1 to 2 business days for acquisition details",
+    leadTime: "1 to 2 business days for orders and pricing",
   },
   {
     id: "tea",
     label: "The Effective Architect (Education & Media)",
-    department: "TEA Learning Network",
+    department: "The Effective Architect Team",
     email: "programmes@theeffectivearchitect.com",
-    leadTime: "2 business days for cohort & curriculum queries",
+    leadTime: "2 business days for courses and masterclasses",
   },
   {
     id: "ako",
     label: "AKO Alliance (Youth Education & Philanthropy)",
-    department: "AKO Alliance Initiative",
+    department: "AKO Alliance Education Team",
     email: "partners@akoalliance.org",
-    leadTime: "3 business days for partnership review",
+    leadTime: "3 business days for partnership queries",
   },
   {
     id: "alive",
-    label: "Alive and Free (Spiritual Movement & Faith)",
-    department: "Alive and Free Fellowship Circle",
+    label: "Alive and Free (Christian Youth Movement)",
+    department: "Alive and Free Community Team",
     email: "community@aliveandfree.org",
-    leadTime: "1 to 2 business days for fellowship queries",
+    leadTime: "1 to 2 business days for fellowship questions",
   },
   {
     id: "speaking",
     label: "Speaking Engagements & Keynotes",
-    department: "Executive & Curatorial Office",
+    department: "Speaking and Curatorial Desk",
     email: "speaking@crystalkizor.com",
-    leadTime: "48 hours for schedule availability",
+    leadTime: "48 hours for event availability",
   },
   {
     id: "press",
-    label: "Press, Research & General Collaborations",
-    department: "Personal Brand & Research Studio",
+    label: "Press, Interviews & General Enquiries",
+    department: "Crystal Kizor Studio",
     email: "hello@crystalkizor.com",
     leadTime: "2 business days",
   },
@@ -97,7 +97,7 @@ export function EnquiryConsole() {
             Start an enquiry
           </h2>
           <p className="text-base sm:text-lg text-[#56595D] leading-relaxed">
-            Every initiative is stewarded by a dedicated team. Select your area of interest to direct your message to the appropriate desk.
+            Every initiative has its own team. Choose what you are looking for, and your message will go straight to the right desk.
           </p>
         </ScrollReveal>
 
@@ -108,10 +108,10 @@ export function EnquiryConsole() {
               <div className="py-12 text-center flex flex-col items-center">
                 <CheckCircle size={48} weight="fill" className="text-[#C64E2E] mb-4" />
                 <h3 className="text-2xl font-medium text-[#121314] mb-2">
-                  Enquiry Recorded
+                  Enquiry Prepared
                 </h3>
                 <p className="text-sm text-[#56595D] max-w-md mb-6 leading-relaxed">
-                  Thank you. Your message has been prepared for {currentRoute.department}. You can also dispatch directly via your email client below.
+                  Thank you. Your message has been prepared for {currentRoute.department}. You can also send it directly via your email client below.
                 </p>
                 <div className="flex gap-4">
                   <a
@@ -169,7 +169,7 @@ export function EnquiryConsole() {
                       required
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
-                      placeholder="Adaeze Adeleke"
+                      placeholder="e.g. Adaeze Adeleke"
                       className="w-full px-4 py-3 bg-[#F8F8F7] border border-[#E3E3DF] text-[#121314] placeholder-[#8C8F94] text-sm focus:outline-none focus:border-[#121314] focus:ring-1 focus:ring-[#121314] transition-colors"
                     />
                   </div>
@@ -187,7 +187,7 @@ export function EnquiryConsole() {
                       required
                       value={emailAddress}
                       onChange={(e) => setEmailAddress(e.target.value)}
-                      placeholder="adaeze@domain.com"
+                      placeholder="e.g. adaeze@example.com"
                       className="w-full px-4 py-3 bg-[#F8F8F7] border border-[#E3E3DF] text-[#121314] placeholder-[#8C8F94] text-sm focus:outline-none focus:border-[#121314] focus:ring-1 focus:ring-[#121314] transition-colors"
                     />
                   </div>
@@ -199,14 +199,14 @@ export function EnquiryConsole() {
                     htmlFor="organization"
                     className="block text-xs font-mono uppercase tracking-wider text-[#121314] mb-2 font-medium"
                   >
-                    Organization or Project Title (Optional)
+                    Company or Project Name (Optional)
                   </label>
                   <input
                     id="organization"
                     type="text"
                     value={organization}
                     onChange={(e) => setOrganization(e.target.value)}
-                    placeholder="Studio, institution, or private commission"
+                    placeholder="e.g. Studio, company, or personal commission"
                     className="w-full px-4 py-3 bg-[#F8F8F7] border border-[#E3E3DF] text-[#121314] placeholder-[#8C8F94] text-sm focus:outline-none focus:border-[#121314] focus:ring-1 focus:ring-[#121314] transition-colors"
                   />
                 </div>
@@ -217,7 +217,7 @@ export function EnquiryConsole() {
                     htmlFor="enquiry-message"
                     className="block text-xs font-mono uppercase tracking-wider text-[#121314] mb-2 font-medium"
                   >
-                    Project Context or Purpose
+                    How can we help?
                   </label>
                   <textarea
                     id="enquiry-message"
@@ -225,7 +225,7 @@ export function EnquiryConsole() {
                     required
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Provide site location, project stage, timeline, or scope of interest..."
+                    placeholder="Tell us about your project, timeline, location, or what you want to achieve..."
                     className="w-full px-4 py-3 bg-[#F8F8F7] border border-[#E3E3DF] text-[#121314] placeholder-[#8C8F94] text-sm focus:outline-none focus:border-[#121314] focus:ring-1 focus:ring-[#121314] transition-colors resize-none"
                   />
                 </div>
@@ -245,7 +245,7 @@ export function EnquiryConsole() {
                     className="inline-flex items-center gap-2 px-5 py-3.5 text-xs uppercase tracking-wider font-medium text-[#121314] border border-[#E3E3DF] hover:border-[#121314] active:scale-[0.98] transition-all focus-visible:outline-none"
                   >
                     <EnvelopeSimple size={16} weight="bold" />
-                    <span>Open Mailto Directly</span>
+                    <span>Open in Email App</span>
                   </a>
                 </div>
               </form>
@@ -256,7 +256,7 @@ export function EnquiryConsole() {
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div className="p-8 bg-white border border-[#E3E3DF] space-y-6">
               <span className="text-[11px] font-mono uppercase tracking-widest text-[#C64E2E] block">
-                Routing Destination
+                Direct Destination
               </span>
 
               <div>
@@ -264,28 +264,28 @@ export function EnquiryConsole() {
                   {currentRoute.department}
                 </h3>
                 <p className="text-xs font-mono text-[#56595D]">
-                  Direct Address: {currentRoute.email}
+                  Direct Email: {currentRoute.email}
                 </p>
               </div>
 
               <div className="pt-4 border-t border-[#E3E3DF] space-y-3">
                 <div className="text-xs text-[#56595D]">
-                  <span className="font-semibold text-[#121314]">Expected Response: </span>
+                  <span className="font-semibold text-[#121314]">Typical response: </span>
                   {currentRoute.leadTime}
                 </div>
                 <div className="text-xs text-[#56595D]">
-                  <span className="font-semibold text-[#121314]">Location Base: </span>
-                  Lagos, Nigeria with international project capability
+                  <span className="font-semibold text-[#121314]">Base: </span>
+                  Lagos, Nigeria with international project capacity
                 </div>
               </div>
             </div>
 
             <div className="mt-6 p-6 border border-[#E3E3DF] bg-[#F8F8F7]">
               <h4 className="text-xs font-mono uppercase tracking-wider text-[#121314] mb-2 font-medium">
-                Confidentiality and Professional Conduct
+                Privacy and Confidentiality
               </h4>
               <p className="text-xs text-[#56595D] leading-relaxed">
-                All architectural briefs, donor proposals, and institutional queries are treated with strict professional confidentiality.
+                All client proposals, building sites, partnership ideas, and personal enquiries are kept strictly private.
               </p>
             </div>
           </div>

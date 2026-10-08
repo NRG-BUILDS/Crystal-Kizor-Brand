@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Crystal Kizor | Architecture, Spatial Design, and Cultural Practice",
+  title: "Crystal Kizor | Architect, Designer, and Founder",
   description:
-    "Architect, designer, researcher, and founder uniting Studio COKA, ELEvated, The Effective Architect, AKO Alliance, and Alive and Free across the African built environment.",
+    "Crystal Kizor is an architect, designer, entrepreneur, speaker, and researcher. Her work spans climate-responsive buildings, contemporary furniture, architectural education, and youth empowerment across Africa.",
   keywords: [
     "Crystal Kizor",
     "Studio COKA",
@@ -32,16 +32,16 @@ export const metadata: Metadata = {
   creator: "Crystal Kizor",
   metadataBase: new URL("https://crystalkizor.com"),
   openGraph: {
-    title: "Crystal Kizor | Architecture, Spatial Design, and Cultural Practice",
+    title: "Crystal Kizor | Architect, Designer, and Founder",
     description:
-      "Architect, designer, researcher, and founder uniting spatial practice, material culture, and civic leadership across Africa.",
+      "Crystal Kizor designs buildings, crafts furniture, and invests in the next generation across Africa.",
     url: "https://crystalkizor.com",
     siteName: "Crystal Kizor Portfolio Hub",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        url: "/assets/crystal/Architectural Studio Portrait.png",
         width: 1200,
         height: 630,
         alt: "Crystal Kizor Architectural Practice and Initiatives",
@@ -50,12 +50,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Crystal Kizor | Architecture, Spatial Design, and Cultural Practice",
+    title: "Crystal Kizor | Architect, Designer, and Founder",
     description:
-      "Architect, designer, researcher, and founder uniting spatial practice, material culture, and civic leadership.",
+      "Crystal Kizor designs buildings, crafts furniture, and invests in the next generation across Africa.",
     creator: "@crystalkizor",
     images: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "/assets/crystal/Architectural Studio Portrait.png",
     ],
   },
   robots: {
