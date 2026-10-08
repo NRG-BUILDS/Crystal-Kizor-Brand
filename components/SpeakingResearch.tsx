@@ -9,26 +9,29 @@ export function SpeakingResearch() {
   const speakingThemes = [
     {
       title: "Buildings for African Climates",
-      summary: "How traditional building wisdom helps modern African cities stay cool, durable, and comfortable without heavy energy costs.",
+      summary:
+        "How traditional building wisdom helps modern African cities stay cool, durable, and comfortable without heavy energy costs.",
     },
     {
       title: "Running a Creative Practice",
-      summary: "How to build an independent architecture studio with healthy finances, clear client contracts, and strong principles.",
+      summary:
+        "How to build an independent architecture studio with healthy finances, clear client contracts, and strong principles.",
     },
     {
       title: "Public Spaces for Communities",
-      summary: "Why thoughtful public spaces and schools give young people a genuine sense of dignity, safety, and belonging.",
+      summary:
+        "Why thoughtful public spaces and schools give young people a genuine sense of dignity, safety, and belonging.",
     },
     {
       title: "Working with Local Materials",
-      summary: "Why building with regional earth, stone, and timber creates better architecture and supports local craftsmen.",
+      summary:
+        "Why building with regional earth, stone, and timber creates better architecture and supports local craftsmen.",
     },
   ];
 
   return (
     <section id="speaking" className="py-20 lg:py-28 border-b border-[#E3E3DF] bg-[#F8F8F7]">
       <div className="max-w-[1340px] mx-auto px-6 lg:px-12">
-        {/* Eyebrow 3 of max 3 allowed on entire page */}
         <ScrollReveal className="max-w-2xl mb-12">
           <p className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#C64E2E] mb-3">
             Keynotes and Talks
@@ -37,40 +40,35 @@ export function SpeakingResearch() {
             Speaking and Ideas
           </h2>
           <p className="text-base sm:text-lg text-[#56595D] leading-relaxed">
-            Crystal delivers keynote talks, joins panel discussions, and teaches on climate-responsive architecture, African cities, and running independent creative businesses.
+            Crystal delivers keynote talks, joins panel discussions, and teaches on
+            climate-responsive architecture, African cities, and running independent creative
+            businesses.
           </p>
         </ScrollReveal>
 
-        {/* 4-Theme Grid with supporting editorial portrait */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start mb-14">
-          {/* Lecture themes */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {speakingThemes.map((item, idx) => (
               <ScrollReveal key={item.title} delay={idx * 0.08}>
                 <div className="p-6 bg-white border border-[#E3E3DF] hover:border-[#121314] transition-colors h-full flex flex-col justify-between">
                   <div>
                     <div className="text-[11px] font-mono text-[#56595D] mb-3">
-                      Topic 0{idx + 1}
+                      Topic {String(idx + 1).padStart(2, "0")}
                     </div>
-                    <h3 className="text-lg font-medium text-[#121314] mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-[#56595D] leading-relaxed">
-                      {item.summary}
-                    </p>
+                    <h3 className="text-lg font-medium text-[#121314] mb-3">{item.title}</h3>
+                    <p className="text-sm text-[#56595D] leading-relaxed">{item.summary}</p>
                   </div>
                 </div>
               </ScrollReveal>
             ))}
           </div>
 
-          {/* Research & Keynote Portrait Frame */}
           <div className="lg:col-span-5">
             <ScrollReveal delay={0.2}>
               <div className="relative aspect-[4/5] w-full bg-[#E8E8E4] border border-[#E3E3DF] overflow-hidden">
                 <Image
                   src="/assets/crystal/Poised in a Warm Design Studio.png"
-                  alt="Crystal Kizor speaking in her design studio"
+                  alt="Crystal Kizor in her design studio"
                   fill
                   sizes="(max-width: 1024px) 100vw, 42vw"
                   className="object-cover"
@@ -84,15 +82,23 @@ export function SpeakingResearch() {
           </div>
         </div>
 
-        {/* Grounded Monograph Quote & CTA */}
+        {/*
+         * The quote below is placeholder copy only. A real verified quote should be
+         * supplied by Crystal Kizor before this page goes live. The source event
+         * name has been removed to avoid attributing an unverified statement.
+         */}
         <ScrollReveal delay={0.3}>
           <div className="p-8 sm:p-10 bg-[#FFFFFF] border-l-4 border-l-[#C64E2E] border border-[#E3E3DF] flex flex-col md:flex-row md:items-center justify-between gap-8">
             <div className="max-w-2xl">
+              <p className="text-[11px] font-mono uppercase tracking-widest text-[#C64E2E] mb-4">
+                Placeholder quote — replace with a real, verified statement from Crystal Kizor
+              </p>
               <blockquote className="text-lg sm:text-xl font-light text-[#121314] leading-relaxed italic mb-3">
-                &ldquo;Architecture is not just about shelter. It shows what we value, what we remember, and what we owe to the next generation.&rdquo;
+                &ldquo;Architecture is not just about shelter. It shows what we value, what we
+                remember, and what we owe to the next generation.&rdquo;
               </blockquote>
               <p className="text-xs font-mono uppercase tracking-wider text-[#56595D]">
-                Crystal Kizor, African Urbanism Forum Keynote
+                Crystal Kizor
               </p>
             </div>
 

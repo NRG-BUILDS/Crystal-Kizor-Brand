@@ -13,8 +13,8 @@ export function Navbar() {
     { label: "Studio COKA", href: "#coka" },
     { label: "ELEvated", href: "#elevated" },
     { label: "The Effective Architect", href: "#tea" },
-    { label: "Civic & Faith", href: "#civic" },
-    { label: "Speaking", href: "#speaking" },
+    { label: "Community", href: "#civic" },
+    { label: "Writing & Ideas", href: "#crystal" },
   ];
 
   return (

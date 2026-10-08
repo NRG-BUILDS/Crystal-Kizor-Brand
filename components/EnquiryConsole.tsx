@@ -12,54 +12,58 @@ interface RoutingTarget {
   leadTime: string;
 }
 
+/*
+ * TODO: Replace placeholder email addresses with confirmed real addresses
+ * before going live. Twitter/X handle is also a placeholder.
+ */
 const ROUTING_OPTIONS: RoutingTarget[] = [
   {
     id: "coka",
     label: "Studio COKA (Architecture, Interiors & Construction)",
     department: "Studio COKA Architecture Studio",
-    email: "commissions@studiocoka.com",
+    email: "hello@studiocoka.com", // TODO: Confirm real email
     leadTime: "2 to 3 business days for project review",
   },
   {
     id: "elevated",
     label: "ELEvated (Furniture & Product Design)",
     department: "ELEvated Furniture Workshop",
-    email: "design@elevatedcraft.com",
+    email: "hello@elevatedcraft.com", // TODO: Confirm real email
     leadTime: "1 to 2 business days for orders and pricing",
   },
   {
     id: "tea",
     label: "The Effective Architect (Education & Media)",
     department: "The Effective Architect Team",
-    email: "programmes@theeffectivearchitect.com",
+    email: "hello@theeffectivearchitect.com", // TODO: Confirm real email
     leadTime: "2 business days for courses and masterclasses",
   },
   {
     id: "ako",
     label: "AKO Alliance (Youth Education & Philanthropy)",
     department: "AKO Alliance Education Team",
-    email: "partners@akoalliance.org",
+    email: "hello@akoalliance.org", // TODO: Confirm real email
     leadTime: "3 business days for partnership queries",
   },
   {
     id: "alive",
     label: "Alive and Free (Christian Youth Movement)",
     department: "Alive and Free Community Team",
-    email: "community@aliveandfree.org",
+    email: "hello@aliveandfree.org", // TODO: Confirm real email
     leadTime: "1 to 2 business days for fellowship questions",
   },
   {
     id: "speaking",
     label: "Speaking Engagements & Keynotes",
     department: "Speaking and Curatorial Desk",
-    email: "speaking@crystalkizor.com",
+    email: "speaking@crystalkizor.com", // TODO: Confirm real email
     leadTime: "48 hours for event availability",
   },
   {
     id: "press",
     label: "Press, Interviews & General Enquiries",
     department: "Crystal Kizor Studio",
-    email: "hello@crystalkizor.com",
+    email: "hello@crystalkizor.com", // TODO: Confirm real email
     leadTime: "2 business days",
   },
 ];
@@ -91,27 +95,25 @@ export function EnquiryConsole() {
   return (
     <section id="enquiry" className="py-20 lg:py-28 border-b border-[#E3E3DF] bg-[#F8F8F7]">
       <div className="max-w-[1340px] mx-auto px-6 lg:px-12">
-        {/* Header Stack */}
         <ScrollReveal className="max-w-3xl mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-[#121314] mb-4">
             Start an enquiry
           </h2>
           <p className="text-base sm:text-lg text-[#56595D] leading-relaxed">
-            Every initiative has its own team. Choose what you are looking for, and your message will go straight to the right desk.
+            Every initiative has its own team. Choose what you are looking for, and your
+            message will go straight to the right desk.
           </p>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
-          {/* Left Form */}
           <div className="lg:col-span-7 bg-white p-8 sm:p-10 border border-[#E3E3DF]">
             {isSubmitted ? (
               <div className="py-12 text-center flex flex-col items-center">
                 <CheckCircle size={48} weight="fill" className="text-[#C64E2E] mb-4" />
-                <h3 className="text-2xl font-medium text-[#121314] mb-2">
-                  Enquiry Prepared
-                </h3>
+                <h3 className="text-2xl font-medium text-[#121314] mb-2">Enquiry Prepared</h3>
                 <p className="text-sm text-[#56595D] max-w-md mb-6 leading-relaxed">
-                  Thank you. Your message has been prepared for {currentRoute.department}. You can also send it directly via your email client below.
+                  Thank you. Your message has been prepared for {currentRoute.department}. You
+                  can also send it directly via your email client below.
                 </p>
                 <div className="flex gap-4">
                   <a
@@ -132,7 +134,6 @@ export function EnquiryConsole() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Routing Target Selector */}
                 <div>
                   <label
                     htmlFor="route-selector"
@@ -154,7 +155,6 @@ export function EnquiryConsole() {
                   </select>
                 </div>
 
-                {/* Name & Email inputs */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label
@@ -169,7 +169,7 @@ export function EnquiryConsole() {
                       required
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
-                      placeholder="e.g. Adaeze Adeleke"
+                      placeholder="Your full name"
                       className="w-full px-4 py-3 bg-[#F8F8F7] border border-[#E3E3DF] text-[#121314] placeholder-[#8C8F94] text-sm focus:outline-none focus:border-[#121314] focus:ring-1 focus:ring-[#121314] transition-colors"
                     />
                   </div>
@@ -187,13 +187,12 @@ export function EnquiryConsole() {
                       required
                       value={emailAddress}
                       onChange={(e) => setEmailAddress(e.target.value)}
-                      placeholder="e.g. adaeze@example.com"
+                      placeholder="your@email.com"
                       className="w-full px-4 py-3 bg-[#F8F8F7] border border-[#E3E3DF] text-[#121314] placeholder-[#8C8F94] text-sm focus:outline-none focus:border-[#121314] focus:ring-1 focus:ring-[#121314] transition-colors"
                     />
                   </div>
                 </div>
 
-                {/* Organization */}
                 <div>
                   <label
                     htmlFor="organization"
@@ -206,12 +205,11 @@ export function EnquiryConsole() {
                     type="text"
                     value={organization}
                     onChange={(e) => setOrganization(e.target.value)}
-                    placeholder="e.g. Studio, company, or personal commission"
+                    placeholder="Studio, company, or personal commission"
                     className="w-full px-4 py-3 bg-[#F8F8F7] border border-[#E3E3DF] text-[#121314] placeholder-[#8C8F94] text-sm focus:outline-none focus:border-[#121314] focus:ring-1 focus:ring-[#121314] transition-colors"
                   />
                 </div>
 
-                {/* Message */}
                 <div>
                   <label
                     htmlFor="enquiry-message"
@@ -230,7 +228,6 @@ export function EnquiryConsole() {
                   />
                 </div>
 
-                {/* Action buttons */}
                 <div className="pt-2 flex flex-wrap items-center gap-4">
                   <button
                     type="submit"
@@ -252,7 +249,6 @@ export function EnquiryConsole() {
             )}
           </div>
 
-          {/* Right Protocol Ledger */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div className="p-8 bg-white border border-[#E3E3DF] space-y-6">
               <span className="text-[11px] font-mono uppercase tracking-widest text-[#C64E2E] block">
@@ -263,8 +259,9 @@ export function EnquiryConsole() {
                 <h3 className="text-xl font-medium text-[#121314] mb-1">
                   {currentRoute.department}
                 </h3>
+                {/* TODO: Replace with confirmed real email before going live */}
                 <p className="text-xs font-mono text-[#56595D]">
-                  Direct Email: {currentRoute.email}
+                  Contact: {currentRoute.email}
                 </p>
               </div>
 
@@ -285,7 +282,8 @@ export function EnquiryConsole() {
                 Privacy and Confidentiality
               </h4>
               <p className="text-xs text-[#56595D] leading-relaxed">
-                All client proposals, building sites, partnership ideas, and personal enquiries are kept strictly private.
+                All client proposals, building sites, partnership ideas, and personal enquiries
+                are kept strictly private.
               </p>
             </div>
           </div>

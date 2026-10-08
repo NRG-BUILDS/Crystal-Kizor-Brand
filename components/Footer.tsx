@@ -10,7 +10,7 @@ export function Footer() {
     { name: "AKO Alliance", href: "#civic", tag: "Youth Education" },
     { name: "Alive and Free", href: "#civic", tag: "Christian Youth Movement" },
     { name: "Speaking Engagements", href: "#speaking", tag: "Keynotes & Talks" },
-    { name: "Crystal Kizor", href: "#", tag: "Personal Monograph" },
+    { name: "Crystal Kizor", href: "#crystal", tag: "Research, Writing & Ideas" },
   ];
 
   return (
@@ -90,6 +90,11 @@ export function Footer() {
                 <li>
                   <Link href="#civic" className="hover:text-[#121314] transition-colors">
                     Community & Faith
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#crystal" className="hover:text-[#121314] transition-colors">
+                    Research, Writing & Ideas
                   </Link>
                 </li>
                 <li>

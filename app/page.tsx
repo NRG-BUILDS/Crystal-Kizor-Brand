@@ -6,6 +6,7 @@ import { Elevated } from "@/components/Elevated";
 import { TheEffectiveArchitect } from "@/components/TheEffectiveArchitect";
 import { CivicInitiatives } from "@/components/CivicInitiatives";
 import { SpeakingResearch } from "@/components/SpeakingResearch";
+import { PersonalBrand } from "@/components/PersonalBrand";
 import { EnquiryConsole } from "@/components/EnquiryConsole";
 import { Footer } from "@/components/Footer";
 
@@ -16,33 +17,32 @@ export default function Home() {
       <Navbar />
 
       {/* Semantic landmark: main content container */}
-      <main
-        id="main-content"
-        tabIndex={-1}
-        className="flex-1 focus:outline-none"
-      >
+      <main id="main-content" tabIndex={-1} className="flex-1 focus:outline-none">
         {/* Section 1: Hero (Asymmetric Split Screen) */}
         <Hero />
 
-        {/* Section 2: Pathways (Segmented Pathway Matrix) */}
+        {/* Section 2: Pathways (Tiered Pathway Matrix with hierarchy) */}
         <Pathways />
 
-        {/* Section 3: Studio COKA (Full-bleed Architectural Ledger & Detail Split) */}
+        {/* Section 3: Studio COKA (Flagship architecture with sticky stack) */}
         <StudioCoka />
 
-        {/* Section 4: ELEvated (Material Triptych & Object Gallery) */}
+        {/* Section 4: ELEvated (Horizontal pan furniture gallery) */}
         <Elevated />
 
-        {/* Section 5: The Effective Architect (Editorial Broadcast Ledger) */}
+        {/* Section 5: The Effective Architect (Editorial broadcast ledger) */}
         <TheEffectiveArchitect />
 
-        {/* Section 6: Civic & Spiritual Initiatives (Juxtaposed Twin Pillars) */}
+        {/* Section 6: Civic and Spiritual Initiatives (Twin pillars) */}
         <CivicInitiatives />
 
-        {/* Section 7: Speaking & Research (Curated Symposium Catalog) */}
+        {/* Section 7: Speaking and Ideas (Symposium catalog) */}
         <SpeakingResearch />
 
-        {/* Section 8: Enquiry Console (Interactive Routing Console) */}
+        {/* Section 8: Personal Brand (Research, writing, and ideas under Crystal Kizor) */}
+        <PersonalBrand />
+
+        {/* Section 9: Enquiry Console (Routing form with mailto fallback) */}
         <EnquiryConsole />
       </main>
 
