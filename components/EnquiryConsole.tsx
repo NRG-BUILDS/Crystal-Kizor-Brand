@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ArrowUpRight, CheckCircle, EnvelopeSimple } from "@phosphor-icons/react";
+import { ScrollReveal } from "@/components/animations/ScrollReveal";
 
 interface RoutingTarget {
   id: string;
@@ -90,15 +91,15 @@ export function EnquiryConsole() {
   return (
     <section id="enquiry" className="py-20 lg:py-28 border-b border-[#E3E3DF] bg-[#F8F8F7]">
       <div className="max-w-[1340px] mx-auto px-6 lg:px-12">
-        {/* Header Stack (No split-header) */}
-        <div className="max-w-3xl mb-12">
+        {/* Header Stack */}
+        <ScrollReveal className="max-w-3xl mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-[#121314] mb-4">
             Start an enquiry
           </h2>
           <p className="text-base sm:text-lg text-[#56595D] leading-relaxed">
             Every initiative is stewarded by a dedicated team. Select your area of interest to direct your message to the appropriate desk.
           </p>
-        </div>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
           {/* Left Form */}
@@ -115,7 +116,7 @@ export function EnquiryConsole() {
                 <div className="flex gap-4">
                   <a
                     href={mailtoLink}
-                    className="inline-flex items-center gap-2 px-5 py-3 text-xs uppercase tracking-wider font-medium text-white bg-[#121314] hover:bg-[#C64E2E] transition-colors"
+                    className="inline-flex items-center gap-2 px-5 py-3 text-xs uppercase tracking-wider font-medium text-white bg-[#121314] hover:bg-[#C64E2E] active:scale-[0.98] transition-all"
                   >
                     <span>Send via Email Client</span>
                     <ArrowUpRight size={14} weight="bold" />
@@ -123,7 +124,7 @@ export function EnquiryConsole() {
                   <button
                     type="button"
                     onClick={() => setIsSubmitted(false)}
-                    className="px-5 py-3 text-xs uppercase tracking-wider font-medium text-[#121314] border border-[#E3E3DF] hover:border-[#121314] transition-colors"
+                    className="px-5 py-3 text-xs uppercase tracking-wider font-medium text-[#121314] border border-[#E3E3DF] hover:border-[#121314] active:scale-[0.98] transition-all"
                   >
                     Reset Form
                   </button>
@@ -281,7 +282,7 @@ export function EnquiryConsole() {
 
             <div className="mt-6 p-6 border border-[#E3E3DF] bg-[#F8F8F7]">
               <h4 className="text-xs font-mono uppercase tracking-wider text-[#121314] mb-2 font-medium">
-                Confidentiality and Intellectual Property
+                Confidentiality and Professional Conduct
               </h4>
               <p className="text-xs text-[#56595D] leading-relaxed">
                 All architectural briefs, donor proposals, and institutional queries are treated with strict professional confidentiality.

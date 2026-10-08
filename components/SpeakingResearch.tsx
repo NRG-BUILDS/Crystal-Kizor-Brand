@@ -1,5 +1,9 @@
+"use client";
+
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
+import { ArrowUpRight } from "@phosphor-icons/react";
+import { ScrollReveal } from "@/components/animations/ScrollReveal";
 
 export function SpeakingResearch() {
   const speakingThemes = [
@@ -25,7 +29,7 @@ export function SpeakingResearch() {
     <section id="speaking" className="py-20 lg:py-28 border-b border-[#E3E3DF] bg-[#F8F8F7]">
       <div className="max-w-[1340px] mx-auto px-6 lg:px-12">
         {/* Eyebrow 3 of max 3 allowed on entire page */}
-        <div className="max-w-2xl mb-12">
+        <ScrollReveal className="max-w-2xl mb-12">
           <p className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#C64E2E] mb-3">
             Keynotes & Research
           </p>
@@ -35,50 +39,74 @@ export function SpeakingResearch() {
           <p className="text-base sm:text-lg text-[#56595D] leading-relaxed">
             Crystal Kizor delivers keynote addresses, academic lectures, and moderated panels analyzing contemporary African spatial practice, material innovation, and entrepreneurial resilience.
           </p>
-        </div>
+        </ScrollReveal>
 
-        {/* 4-Theme Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
-          {speakingThemes.map((item, idx) => (
-            <div
-              key={item.title}
-              className="p-8 bg-white border border-[#E3E3DF] hover:border-[#121314] transition-colors"
-            >
-              <div className="text-[11px] font-mono text-[#56595D] mb-3">
-                Lecture Subject 0{idx + 1}
+        {/* 4-Theme Grid with supporting editorial portrait */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start mb-14">
+          {/* Lecture themes */}
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {speakingThemes.map((item, idx) => (
+              <ScrollReveal key={item.title} delay={idx * 0.08}>
+                <div className="p-6 bg-white border border-[#E3E3DF] hover:border-[#121314] transition-colors h-full flex flex-col justify-between">
+                  <div>
+                    <div className="text-[11px] font-mono text-[#56595D] mb-3">
+                      Lecture Subject 0{idx + 1}
+                    </div>
+                    <h3 className="text-lg font-medium text-[#121314] mb-3">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-[#56595D] leading-relaxed">
+                      {item.summary}
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          {/* Research & Keynote Portrait Frame */}
+          <div className="lg:col-span-5">
+            <ScrollReveal delay={0.2}>
+              <div className="relative aspect-[4/5] w-full bg-[#E8E8E4] border border-[#E3E3DF] overflow-hidden">
+                <Image
+                  src="/assets/crystal/Poised in a Warm Design Studio.png"
+                  alt="Crystal Kizor during an architectural research and symposium dialogue"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 42vw"
+                  className="object-cover"
+                />
               </div>
-              <h3 className="text-xl font-medium text-[#121314] mb-3">
-                {item.title}
-              </h3>
-              <p className="text-sm text-[#56595D] leading-relaxed">
-                {item.summary}
-              </p>
-            </div>
-          ))}
+              <div className="mt-3 flex items-center justify-between text-xs font-mono text-[#56595D]">
+                <span>Curatorial Dialogue & Public Lectures</span>
+                <span>Symposium Archive</span>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
 
         {/* Grounded Monograph Quote & CTA */}
-        <div className="p-8 sm:p-10 bg-[#FFFFFF] border-l-4 border-l-[#C64E2E] border border-[#E3E3DF] flex flex-col md:flex-row md:items-center justify-between gap-8">
-          <div className="max-w-2xl">
-            {/* Quote max 3 lines, clean attribution, zero em-dashes */}
-            <blockquote className="text-lg sm:text-xl font-light text-[#121314] leading-relaxed italic mb-3">
-              &ldquo;Architecture is not merely the arrangement of shelter. It is the physical manifestation of our values, our memory, and our responsibility to the next generation.&rdquo;
-            </blockquote>
-            <p className="text-xs font-mono uppercase tracking-wider text-[#56595D]">
-              Crystal Kizor, African Urbanism Forum Keynote
-            </p>
-          </div>
+        <ScrollReveal delay={0.3}>
+          <div className="p-8 sm:p-10 bg-[#FFFFFF] border-l-4 border-l-[#C64E2E] border border-[#E3E3DF] flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div className="max-w-2xl">
+              <blockquote className="text-lg sm:text-xl font-light text-[#121314] leading-relaxed italic mb-3">
+                &ldquo;Architecture is not merely the arrangement of shelter. It is the physical manifestation of our values, our memory, and our responsibility to the next generation.&rdquo;
+              </blockquote>
+              <p className="text-xs font-mono uppercase tracking-wider text-[#56595D]">
+                Crystal Kizor, African Urbanism Forum Keynote
+              </p>
+            </div>
 
-          <div className="shrink-0">
-            <Link
-              href="#enquiry"
-              className="inline-flex items-center gap-2.5 px-6 py-3.5 text-xs uppercase tracking-wider font-medium text-white bg-[#121314] hover:bg-[#C64E2E] transition-colors focus-visible:outline-none"
-            >
-              <span>Book speaking</span>
-              <ArrowUpRight size={15} weight="bold" />
-            </Link>
+            <div className="shrink-0">
+              <Link
+                href="#enquiry"
+                className="inline-flex items-center gap-2.5 px-6 py-3.5 text-xs uppercase tracking-wider font-medium text-white bg-[#121314] hover:bg-[#C64E2E] active:scale-[0.98] transition-all focus-visible:outline-none"
+              >
+                <span>Book speaking</span>
+                <ArrowUpRight size={15} weight="bold" />
+              </Link>
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { List, X, ArrowUpRight } from "@phosphor-icons/react";
 
 export function Navbar() {
@@ -17,20 +18,24 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#F8F8F7]/90 backdrop-blur-md border-b border-[#E3E3DF]">
+    <header className="sticky top-0 z-50 w-full bg-[#F8F8F7]/95 backdrop-blur-md border-b border-[#E3E3DF]">
       <div className="max-w-[1340px] mx-auto px-6 lg:px-12 h-[72px] flex items-center justify-between">
-        {/* Brand identity */}
+        {/* Brand identity replaced with ck_logo_primary */}
         <Link
           href="/"
-          className="group flex flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C64E2E]"
+          className="group flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C64E2E]"
           aria-label="Crystal Kizor home"
         >
-          <span className="text-base font-semibold tracking-wider text-[#121314] uppercase">
-            Crystal Kizor
-          </span>
-          <span className="text-[11px] font-mono text-[#56595D] tracking-tight">
-            Spatial Practice & Cultural Initiatives
-          </span>
+          <div className="relative h-9 w-36 sm:w-44">
+            <Image
+              src="/assets/brand/ck_logo_primary.png"
+              alt="Crystal Kizor"
+              fill
+              priority
+              sizes="180px"
+              className="object-contain object-left"
+            />
+          </div>
         </Link>
 
         {/* Desktop single-line navigation */}
@@ -53,7 +58,7 @@ export function Navbar() {
         <div className="hidden lg:flex items-center gap-4">
           <Link
             href="#enquiry"
-            className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-medium uppercase tracking-wider text-white bg-[#121314] hover:bg-[#C64E2E] transition-colors focus-visible:outline-none"
+            className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-medium uppercase tracking-wider text-white bg-[#121314] hover:bg-[#C64E2E] active:scale-[0.98] transition-all focus-visible:outline-none"
           >
             <span>Start an enquiry</span>
             <ArrowUpRight size={14} weight="bold" />

@@ -11,12 +11,16 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-[100dvh] flex flex-col bg-[#F8F8F7] text-[#121314]">
+    <div className="min-h-dvh flex flex-col bg-[#F8F8F7] text-[#121314]">
       {/* Semantic landmark: banner / header navigation */}
       <Navbar />
 
       {/* Semantic landmark: main content container */}
-      <main id="main-content" tabIndex={-1} className="flex-1 focus:outline-none">
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className="flex-1 focus:outline-none"
+      >
         {/* Section 1: Hero (Asymmetric Split Screen) */}
         <Hero />
 
